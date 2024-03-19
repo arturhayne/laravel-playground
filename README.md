@@ -8,8 +8,11 @@
 ## Run
 php artisan serve --host=0.0.0.0 --port=8070
 
- ### Code style
+### Code style
 Using [oskarstark](https://github.com/OskarStark/php-cs-fixer-ga) to autofix phpcs
 ```
 docker run --rm -it -w=/app -v ${PWD}:/app oskarstark/php-cs-fixer-ga:latest
 ```
+
+## Debug
+Update `xdebug.start_with_request=no` to yes in xdebug.ini
